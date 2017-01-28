@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["carmen0208"]
   spec.email         = ["carmen.liujia@gmail.com"]
 
-  spec.summary       = %q{build rails framework my self.}
-  spec.description   = %q{Training for how to build rails framework my self.}
+  spec.summary       = %q{Build Rails frameworks myself}
+  spec.description   = %q{An lesson of how to build rails frameworks myself}
   spec.homepage      = "http://carmen0208.github.io"
   spec.license       = "MIT"
 
@@ -30,11 +30,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.13"
+  spec.add_development_dependency "bundler", "~> 1.14"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "rest-client"
-  spec.add_development_dependency "some_gem", "1.3.0"
-  spec.add_development_dependency "other_gem", ">0.8.2"
   spec.add_runtime_dependency "rack"
 end

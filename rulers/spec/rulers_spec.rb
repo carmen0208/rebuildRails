@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe Rulers do
+RSpec.describe Rulers do
   it "has a version number" do
     expect(Rulers::VERSION).not_to be nil
   end
