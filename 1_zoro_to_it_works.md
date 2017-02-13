@@ -1,3 +1,9 @@
+* Ruby version
+
+```
+2.2.2
+```
+
 * gem:
 
   ```ruby
