@@ -9,4 +9,4 @@ end
 $LOAD_PATH << File.join(File.dirname(__FILE__),
 "..", "app",  "controllers")
 # puts "LOADPATH : #{$LOAD_PATH}"
-require "quotes_controller"
+# require "quotes_controller"
