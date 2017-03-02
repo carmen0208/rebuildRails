@@ -1,8 +1,12 @@
 class Object
   def self.const_missing(c)
-    puts "Missing constant: #{c.inspect}!"
+    return nil if @calling_const_missing
+    @calling_const_missing = true
+    puts "Missing constant: #{c.inspect}!, with #{Rulers.to_underscore(c.to_s)}"
     require Rulers.to_underscore(c.to_s)
-    Object.const_get(c)
+    klass = Object.const_get(c)
+    @calling_const_missing = false
+    klass
     # STDERR.puts "Missing constant: #{c.inspect}!"
   end
 end
